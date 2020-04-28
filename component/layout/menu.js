@@ -41,7 +41,7 @@ const Menu = () => {
         <MenuStyle>
             <div>
                     <h2>
-                        MICROSITE LYFMAP
+                        LYF COVID-19
                     </h2>
             </div>
             {/* <div>

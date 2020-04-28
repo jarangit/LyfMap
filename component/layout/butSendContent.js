@@ -10,7 +10,7 @@ const ModalSty = styled.div`
   div{
     background-color: #f56991;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #f56991;
     width: 30%;
     border-radius: 3.5rem;
@@ -22,6 +22,11 @@ const ModalSty = styled.div`
         color: #f56991;
 
     }
+    }
+    @media all and  (max-width: 650px){
+        div{
+            width:80%;
+        }
     }
 `
 

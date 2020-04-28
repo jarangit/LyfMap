@@ -40,6 +40,12 @@ const ModalSty = styled.div`
             height: 50px;
         }
     }
+
+    @media all and  (max-width: 650px){
+        div{
+            width:85%;
+        }
+    }
    
 `
 
@@ -97,6 +103,7 @@ const Modal = (props) => {
     const [ subStep, setSubStep ] = useState(true);
     console.log(subStep)
     const addSubStep = () => { setSubStep(!subStep) }
+    const addSubStepClose = () => { setSubStep(true) }
     const ShowSubStep = () => {
         if(subStep === true){
             return(
