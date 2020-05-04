@@ -1,18 +1,27 @@
 import styled from 'styled-components'
-import Link from 'next/link'
 import { useState } from 'react'
 import Modal from './modal'
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import Logo  from '../../lib/img/Microsite/Icon/Loveyou.png'
 
 
 const MenuStyle = styled.div`
-    background: #f56991;
+    background: white;
+    border-top: solid 10px #f56991;
     width: 100vw;
-    display: flex;
     div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         max-width: 1024px;
         margin: 0 auto;
-        color: white;
-        padding: 10px 5px;
+        padding: 5px 5px;
+        input{
+            width: 80%;
+            border-style: none;
+        }
         /* justify-content: space-between; */
     }
 
@@ -40,19 +49,20 @@ const Menu = () => {
     return(
         <MenuStyle>
             <div>
-                    <h2>
-                        LYF COVID-19
-                    </h2>
+                <div>
+                    <FontAwesomeIcon icon = {faBars}  size="lg" color = '#f56991'/>
+                </div>
+                    <div>
+                        ส่งต่อกำลังใจ สู้ COVID-19
+                    </div>
+                    <div><Link href="/LongDoMap" ><img src= {Logo} width='40'/></Link></div>
             </div>
-            {/* <div>
-            <ButSend>
-                    <li>
-                    <Link href = "#">
-                            ร่วมส่งกำลังใจให้หมอ-พยาบาล
-                    </Link>
-                    </li>
-            </ButSend>
-            </div> */}
+                    <hr/>
+           <div>
+               <div><FontAwesomeIcon icon = {faSearch} size = 'lg' color = '#D1D1D1' /></div>
+                <input type="text" placeholder="ค้นหาโรงพยาบาล" name="search2"/>
+                <div><FontAwesomeIcon icon = {faCaretDown} size = "lg" color = '#D1D1D1'/></div>
+           </div>
         </MenuStyle>
     )
 }

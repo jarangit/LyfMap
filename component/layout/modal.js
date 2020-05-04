@@ -18,7 +18,7 @@ const ModalSty = styled.div`
     margin: auto;
     padding: 20px;
     width: 50%;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     text-align:center;
 
     span{

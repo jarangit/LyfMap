@@ -9,4 +9,7 @@ export default css.global`
     padding: 0;
     margin: 5px 0;
   }
+  hr{
+    margin: 0;
+  }
 `
