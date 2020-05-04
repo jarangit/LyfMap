@@ -17,7 +17,6 @@ const LongDoMapPage = () =>  {
       const mapKey = '1234778bad4852953ddbeb5ceea0348c'
       return (
         <Layout>
-          <h1>map</h1>
           <Modal isOpen= {navOpen} onClose = {() => { setNavOpen(!navOpen) }}/>
           <LongdoMap id="longdo-map" mapKey={mapKey} callback={initMap} />
           <ButSendCon func = {clickToShow} />

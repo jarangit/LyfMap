@@ -41,7 +41,7 @@ const ButSendCon = (props) => {
         <ModalSty>
             <div onClick = {props.func}>
                 <img  src = {Collaborate} width = '40'/>
-                <h3 >ร่วมส่งกำลังใจให้ หมอ - พยาบาบ</h3>
+                <h3 >ร่วมส่งกำลังใจให้ หมอ - พยาบาล</h3>
             </div>
         </ModalSty>
     )

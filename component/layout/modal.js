@@ -152,7 +152,7 @@ const Modal = (props) => {
 
     // const addNumStep = () => { setNumStep(!numStep) }
     const ShowChillModal = () => {
-        if(props.isOpen === true){
+        if(props.isOpen === false){
             return(
                    <ModalSty>
                     <Card>
