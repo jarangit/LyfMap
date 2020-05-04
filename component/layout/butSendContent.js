@@ -1,19 +1,21 @@
 import styled from 'styled-components'
-
+import Collaborate from '../../lib/img/Microsite/Icon/Collaborate.png'
 
 const ModalSty = styled.div`
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
-    margin: 10px 0 ;
   div{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
     background-color: #f56991;
     margin: auto;
     padding: 5px;
     border: 1px solid #f56991;
     width: 30%;
-    border-radius: 3.5rem;
     color:white;
     text-align: center;
     :hover{
@@ -22,10 +24,13 @@ const ModalSty = styled.div`
         color: #f56991;
 
     }
+    img{
+        margin: 0 10px;
+    }
     }
     @media all and  (max-width: 650px){
         div{
-            width:80%;
+            width:100%;
         }
     }
 `
@@ -35,7 +40,8 @@ const ButSendCon = (props) => {
     return(
         <ModalSty>
             <div onClick = {props.func}>
-                <h4 >ส่งข้อความถึงคุณหมอ</h4>
+                <img  src = {Collaborate} width = '40'/>
+                <h3 >ร่วมส่งกำลังใจให้ หมอ - พยาบาบ</h3>
             </div>
         </ModalSty>
     )

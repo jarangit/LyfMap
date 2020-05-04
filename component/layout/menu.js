@@ -5,6 +5,9 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import Logo  from '../../lib/img/Microsite/Icon/Loveyou.png'
+import ButSendCon from './butSendContent'
+import { withRouter } from 'next/router'
+
 
 
 const MenuStyle = styled.div`
@@ -44,7 +47,27 @@ const ButSend =styled.div`
     }
     /* margin: 10px; */
 `
-const Menu = () => {
+const Menu = ({router}) => {
+
+    console.log(router.pathname)
+    const CheckUrl = () => {
+        if(router.pathname === '/'){
+            return (
+            <div>
+                <div><FontAwesomeIcon icon = {faSearch} size = 'lg' color = '#D1D1D1' /></div>
+                <input type="text" placeholder="ค้นหาโรงพยาบาล" name="search2"/>
+                <div><FontAwesomeIcon icon = {faCaretDown} size = "lg" color = '#D1D1D1'/></div>    
+            </div>
+            )
+        }else{
+            return(
+                ''
+            )
+        }
+    }
+
+
+
 
     return(
         <MenuStyle>
@@ -58,13 +81,9 @@ const Menu = () => {
                     <div><Link href="/LongDoMap" ><img src= {Logo} width='40'/></Link></div>
             </div>
                     <hr/>
-           <div>
-               <div><FontAwesomeIcon icon = {faSearch} size = 'lg' color = '#D1D1D1' /></div>
-                <input type="text" placeholder="ค้นหาโรงพยาบาล" name="search2"/>
-                <div><FontAwesomeIcon icon = {faCaretDown} size = "lg" color = '#D1D1D1'/></div>
-           </div>
+               {CheckUrl()}
         </MenuStyle>
     )
 }
 
-export default Menu
+export default withRouter(Menu)

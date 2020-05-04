@@ -1,22 +1,28 @@
 import { longdo, map, LongdoMap } from '../LongDoMap/LongDoMap-Starter'
-import React,{ Component } from 'react'
+import React,{ Component,useState } from 'react'
 import Layout from '../component/layout/layout';
+import ButSendCon from "../component/layout/butSendContent";
+import Modal from "../component/layout/modal";
 
-class LongDoMapPage extends Component {
 
-    initMap(){
-      map.Layers.setBase(longdo.Layers.GRAY);
+
+const LongDoMapPage = () =>  {
+
+    const initMap=()=>{
+     return map.Layers.setBase(longdo.Layers.GRAY);
     }
   
-    render() {
+      const [ navOpen, setNavOpen ] = useState(true)
+      const clickToShow = () => { setNavOpen(!navOpen) }
       const mapKey = '1234778bad4852953ddbeb5ceea0348c'
       return (
         <Layout>
           <h1>map</h1>
-          <LongdoMap id="longdo-map" mapKey={mapKey} callback={this.initMap} />
+          <Modal isOpen= {navOpen} onClose = {() => { setNavOpen(!navOpen) }}/>
+          <LongdoMap id="longdo-map" mapKey={mapKey} callback={initMap} />
+          <ButSendCon func = {clickToShow} />
         </Layout>
       );
-    }
   }
   
   export default LongDoMapPage;
