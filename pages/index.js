@@ -12,6 +12,7 @@ class LongDoMapPage extends Component {
       const mapKey = '1234778bad4852953ddbeb5ceea0348c'
       return (
         <Layout>
+          <h1>map</h1>
           <LongdoMap id="longdo-map" mapKey={mapKey} callback={this.initMap} />
         </Layout>
       );
