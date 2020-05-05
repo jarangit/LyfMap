@@ -8,7 +8,7 @@ import Link from 'next/link'
 const ModalSty = styled.div`
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 50%; /* Location of the box */
+    padding-top: 20%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -17,6 +17,7 @@ const ModalSty = styled.div`
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     @media all and  (max-width: 650px){
+        padding-top: 50%; /* Location of the box */
         div{
             width:85%;
         }
