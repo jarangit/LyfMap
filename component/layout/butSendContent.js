@@ -3,6 +3,10 @@ import Collaborate from '../../lib/img/Microsite/Icon/Collaborate.png'
 import { withRouter } from 'next/router'
 
 const ModalSty = styled.div`
+    a{
+        text-decoration: none;
+
+    }
     position: fixed;
     bottom: 0;
     right: 0;
@@ -20,7 +24,10 @@ const ModalSty = styled.div`
     color:white;
     text-align: center;
     img{
-        margin: 0 10px;
+        margin: 0 30px;
+    }
+    h4{
+        margin: 20px 50px 20px 0;
     }
     }
     @media all and  (max-width: 650px){
@@ -42,9 +49,21 @@ const ButSendCon = (props) => {
             )
         } else if (props.pathName === '/select'){
             return(
-                <div onClick = {props.func}>
-                    <h3 >เลือก</h3>
-                </div>
+                <a href = "sent">
+                    <div>
+                        <h3 >เลือก</h3>
+                    </div>
+                </a>
+            )
+        }
+        else if (props.pathName === '/sent'){
+            return(
+                <a href = "sent">
+                    <div width="50">
+                    <img src = {Collaborate} width = '40'/>
+                        <h4 >ร่วมส่งกำลังใจไปยังบุคลากรทางการแพทย์และเจ้าหน้าที่ทุกท่าน</h4>
+                    </div>
+                </a>
             )
         }else {
             return''
