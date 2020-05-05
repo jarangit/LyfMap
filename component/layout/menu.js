@@ -77,7 +77,7 @@ const Menu = ({router}) => {
                     <div>
                         ส่งต่อกำลังใจ สู้ COVID-19
                     </div>
-                    <div><Link href="/LongDoMap" ><img src= {Logo} width='40'/></Link></div>
+                    <div><Link href="/" ><img src= {Logo} width='40'/></Link></div>
             </div>
                     <hr/>
                {CheckUrl()}

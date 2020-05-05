@@ -162,7 +162,7 @@ const Modal = (props) => {
                     <h4>Socail Network</h4>
                     <Ul>
                         <FB>
-                            <a href ="#">
+                            <a href ="select">
                             <div><FontAwesomeIcon icon = {faFacebookF} color= "#FFFFFF"/></div>
                             <p>เข้าสู้ระบบด้วย Facebook</p>
                             </a>
