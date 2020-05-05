@@ -49,7 +49,6 @@ const ButSend =styled.div`
 `
 const Menu = ({router}) => {
 
-    console.log(router.pathname)
     const CheckUrl = () => {
         if(router.pathname === '/'){
             return (

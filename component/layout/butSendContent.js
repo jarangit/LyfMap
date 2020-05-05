@@ -18,12 +18,6 @@ const ModalSty = styled.div`
     width: 30%;
     color:white;
     text-align: center;
-    :hover{
-        background-color: white;
-        border: 1px solid white;
-        color: #f56991;
-
-    }
     img{
         margin: 0 10px;
     }
@@ -36,7 +30,6 @@ const ModalSty = styled.div`
 `
 
 const ButSendCon = (props) => {
-    console.log(props.func)
     return(
         <ModalSty>
             <div onClick = {props.func}>
