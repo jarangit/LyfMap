@@ -1,7 +1,5 @@
 import Menu from "./menu"
-import { createGlobalStyle } from 'styled-components'
 import globalStyles from './globalSty.js'
-import Document, { Head, Main, NextScript } from 'next/document'
 
 
 

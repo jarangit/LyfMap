@@ -5,6 +5,7 @@ import { withRouter } from 'next/router'
 import styled from 'styled-components'
 import BgImg  from '../lib/img/Microsite/Line.jpg'
 import HeartImg from '../lib/img/Microsite/Icon/Heart.png'
+import SliderTest from '../component/layout/slideDoctor'
 
 const SelectPageSty = styled.div`
     div{
@@ -27,8 +28,8 @@ const SelectPage = ({router}) => {
                     <img src = {HeartImg} width = '40'/>
                 </div>
                 <div>
-                    this slide tap
                 </div>
+                    <SliderTest/>
                     <img  src = {BgImg} />
             </SelectPageSty>
             <ButSendCon pathName = {router.pathname}/>

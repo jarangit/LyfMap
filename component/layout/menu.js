@@ -74,9 +74,9 @@ const Menu = ({router}) => {
                 <div>
                     <FontAwesomeIcon icon = {faBars}  size="lg" color = '#f56991'/>
                 </div>
-                    <div>
+                    <h4>
                         ส่งต่อกำลังใจ สู้ COVID-19
-                    </div>
+                    </h4>
                     <div><Link href="/" ><img src= {Logo} width='40'/></Link></div>
             </div>
                     <hr/>

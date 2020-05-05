@@ -20,6 +20,10 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-google-maps": "^9.4.5",
+    "react-simple-image-slider": "^1.0.3",
+    "react-slick": "^0.25.2",
+    "react-slideshow-image": "^1.4.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.0"
   }
 }

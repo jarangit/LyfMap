@@ -21,6 +21,25 @@ const BoxSent = styled.div`
     display:inline-block;
     background-color: #F8F8F8;
     width: 100%;
+    div{
+        padding: 20px;
+        a{
+            color:#f56991;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+            padding: 25px 25px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    }
+`
+const InputCheckBox = styled.input`
+    background-color:white;
 `
 const SentPage = ({router}) => {
     return(
@@ -37,12 +56,10 @@ const SentPage = ({router}) => {
                 </SentPageSty>
 
                 <BoxSent>
-                    <h3>ข้อความให้กำลังใจ</h3>
                     <div>
-                        <textarea></textarea>
-                    </div>
-                    <div>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                    <h4>ข้อความให้กำลังใจ</h4>
+                        <textarea type="text" id="fname" name="firstname" placeholder="ใส่ข้อความ ()"/>
+                    <InputCheckBox type="checkbox"/>
                     <label for="vehicle1">ยอมรับข้อตกลง <a href = "#">คลิกอ่าน</a></label>
                     </div>
                 </BoxSent>

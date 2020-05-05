@@ -1,6 +1,7 @@
 import css from 'styled-jsx/css'
 
 export default css.global`
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet');
   body {
     margin: 0;
