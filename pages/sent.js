@@ -41,10 +41,14 @@ const BoxSent = styled.div`
 const InputCheckBox = styled.input`
     background-color:white;
 `
+const Back = styled.p`
+    color:#f56991;
+    padding: 20px;
+`
 const SentPage = ({router}) => {
     return(
         <Layout>
-                <p> ย้อนกลับ </p>
+                <Back> ย้อนกลับ </Back>
             <SentPageSty>
                 <div>
                     <h2>เลือกแบบดอกไม้</h2>
@@ -58,7 +62,7 @@ const SentPage = ({router}) => {
                 <BoxSent>
                     <div>
                     <h4>ข้อความให้กำลังใจ</h4>
-                        <textarea type="text" id="fname" name="firstname" placeholder="ใส่ข้อความ ()"/>
+                        <textarea type="text" id="fname" name="firstname" placeholder="ใส่ข้อความ (ตัวอย่าง : ส่งกำลังใจให้คุณหมอแบะพยาบาลทุกท่านนะคะ ในช่วงวิกิฤตินี้สู้ๆ ค่ะ)"/>
                     <InputCheckBox type="checkbox"/>
                     <label for="vehicle1">ยอมรับข้อตกลง <a href = "#">คลิกอ่าน</a></label>
                     </div>
